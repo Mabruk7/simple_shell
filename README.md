@@ -1,4 +1,4 @@
-Simple shell teal project
+Simple shell team project
 
 This project was done using C language. 
 
