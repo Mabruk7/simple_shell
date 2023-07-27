@@ -39,9 +39,9 @@ extern char **environ;
 
 /**
  * struct liststr - singly linked list
- * @num: the number field
- * @str: a string
- * @next: points to the next node
+ * @num: number field
+ * @str: string
+ * @next: points to next node
  */
 typedef struct liststr
 {
