@@ -1,7 +1,7 @@
 #include "shell.h"
 
 /**
- * interactive - returns true if shell is in interactive mode
+ * interactive - brings true if shell is responsive
  * @info: address
  *
  * Return: 1 if responsive, 0 otherwise
@@ -12,9 +12,9 @@ int interactive(info_t *info)
 }
 
 /**
- * is_delim - inspect if char is delimeter
- * @c: the character to check
- * @delim: the delimeter string
+ * is_delim - inspects if character is delimeter
+ * @c: the character being checked
+ * @delim: the delimeter
  * Return: 1 if true, 0 if false
  */
 int is_delim(char c, char *delim)
@@ -26,8 +26,8 @@ int is_delim(char c, char *delim)
 }
 
 /**
- * _isalpha - checks for alphabetic char
- * @c: The char to input
+ * _isalpha - checks for alphabetic character
+ * @c: character inputed
  * Return: 1 if c is alphabetic, 0 otherwise
  */
 
@@ -40,9 +40,9 @@ int _isalpha(int c)
 }
 
 /**
- * _atoi - converts a string into an integer
- * @s: the string to be converted
- * Return: 0 if no numbers in string, converted number otherwise
+ * _atoi -turns string into an integer
+ * @s: the string converted
+ * Return: 0 if no numbers in string, changed  number otherwise
  */
 
 int _atoi(char *s)
