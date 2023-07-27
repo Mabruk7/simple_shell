@@ -2,9 +2,9 @@
 
 /**
  * interactive - returns true if shell is in interactive mode
- * @info: struct address
+ * @info: address
  *
- * Return: 1 if in  interactive mode, 0 otherwise
+ * Return: 1 if responsive, 0 otherwise
  */
 int interactive(info_t *info)
 {
@@ -12,7 +12,7 @@ int interactive(info_t *info)
 }
 
 /**
- * is_delim - checks if char is delimeter
+ * is_delim - inspect if char is delimeter
  * @c: the character to check
  * @delim: the delimeter string
  * Return: 1 if true, 0 if false
