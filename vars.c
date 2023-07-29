@@ -1,10 +1,10 @@
 #include "shell.h"
 
 /**
- * is_chain - test if current character in buffer is a chain delimeter
+ * is_chain - examine if current character in buffer is a chain delimeter
  * @info: parameter structure
  * @buf: character buffer
- * @p: address of current position in buffer
+ * @p: direction of present position in buffer
  *
  * Return: 1 if chain delimeter, 0 otherwise
  */
@@ -36,14 +36,14 @@ int is_chain(info_t *info, char *buf, size_t *p)
 }
 
 /**
- * check_chain - checks we should continue chaining based on last status
+ * check_chain - inspects if we should continue chaining as per last status
  * @info: parameter structure
  * @buf: character buffer
- * @p: address of current position in buffer
- * @i: starting position in buffer
- * @len: length of buffer
+ * @p: direction of resent position in buffer
+ * @i: starting place in buffer
+ * @len: extent of buffer
  *
- * Return: Void
+ * Return: invalid
  */
 void check_chain(info_t *info, char *buf, size_t *p, size_t i, size_t len)
 {
@@ -70,10 +70,10 @@ void check_chain(info_t *info, char *buf, size_t *p, size_t i, size_t len)
 }
 
 /**
- * replace_alias - replaces an aliases in tokenized string
+ * replace_alias - substitutes an aliases in tokenized string
  * @info: parameter structure
  *
- * Return: 1 if replaced, 0 otherwise
+ * Return: if replaced 1, otherwise 0
  */
 int replace_alias(info_t *info)
 {
@@ -99,10 +99,10 @@ int replace_alias(info_t *info)
 }
 
 /**
- * replace_vars - replaces vars in tokenized string
+ * replace_vars - represents vars in tokenized string
  * @info: parameter structure
  *
- * Return: 1 if replaced, 0 otherwise
+ * Return: 1 if replaced, otherwise 0
  */
 int replace_vars(info_t *info)
 {
@@ -140,11 +140,11 @@ int replace_vars(info_t *info)
 }
 
 /**
- * replace_string - replaces string
- * @old: address of the old string
- * @new: new string
+ * replace_string - stands in place of string
+ * @old: direction of the old string
+ * @new: recent string
  *
- * Return: 1 if replaced, 0 otherwise
+ * Return: 1 if replaced, otherwise 0
  */
 int replace_string(char **old, char *new)
 {
