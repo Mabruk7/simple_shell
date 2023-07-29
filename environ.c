@@ -68,7 +68,7 @@ int _myunsetenv(info_t *info)
 		_eputs("Too few arguements.\n");
 		return (1);
 	}
-	for (m = 1; i <= info->argc; m++)
+	for (m = 1; m <= info->argc; m++)
 		_unsetenv(info, info->argv[m]);
 
 	return (0);
